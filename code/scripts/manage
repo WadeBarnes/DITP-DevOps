@@ -165,13 +165,13 @@ usage () {
       - Lookup errors stop the run without classifying an unverified account as not found.
 
       Example - Assign a client role (omit ai-reviewer-api for a realm role):
-        clientId="migration-user" \\
-        clientSecret=<Client_Credentials> \\
-        ./manage assignRole \\
-          "https://dev.loginproxy.gov.bc.ca" \\
-          "court-services-jag" \\
-          "reviewer" \\
-          "./list.txt" \\
+        clientId="migration-user" \
+        clientSecret=<Client_Credentials> \
+        ./manage assignRole \
+          "https://dev.loginproxy.gov.bc.ca" \
+          "court-services-jag" \
+          "reviewer" \
+          "./list.txt" \
           "ai-reviewer-api"
 
     deleteUsers <sourceBaseUrl> <sourceRealm> [<searchQuery>]
